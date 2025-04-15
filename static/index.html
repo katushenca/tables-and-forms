@@ -9,7 +9,34 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form method="post" action="/pets/orders" id="form">
+        <label>
+            Тип животного
+             <select name="petType">
+                <option value="cat">Котик</option>
+                <option value="dog">Собачка</option>
+                <option value="turtle">Черепашка</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="gender">Мальчик
+            <input type="radio" name="gender">Девочка
+        </label>
+        <br>
+        <label>
+            Цвет глаз <select name="eyeColor">
+                <option value="blue">Голубой</option>
+                <option value="brown">Янтарный</option>
+                <option value="green">Зеленый</option>
+            </select>
+            <br>
+        </label>
+            <input type="submit">
+
+
+
+    </form>
 
 </main>
 </body>
