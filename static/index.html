@@ -20,16 +20,13 @@
         </label>
         <br>
         <label>
-            <input type="radio" name="gender" value="boy">Мальчик
-            <input type="radio" name="gender" value="girl">Девочка
+            <input type="radio" name="gender" value="boy" >Мальчик
+            <input type="radio" name="gender" value="girl" checked>Девочка
         </label>
         <br>
-        <label>
-            Цвет глаз <select name="eyeColor">
-                <option value="blue">Голубой</option>
-                <option value="brown">Янтарный</option>
-                <option value="green">Зеленый</option>
-            </select>
+        <label>Цвет глаз
+            <input type="color" name="eyeColor" value="#ff0000">
+        </label>
             <br>
         <label>
             Длина хвоста
@@ -38,22 +35,22 @@
         <br>
         <label>
             Имя
-            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="name" placeholder="Имя питомца" minlength="3" maxlength="50" required>
         </label>
         <br>
         <label>
             Дата рождения
-            <input type="date" name="dateOfBirth">
+            <input type="date" name="dateOfBirth" required>
         </label>
         <br>
         <label>
             Email
-            <input type="email" name="email" placeholder="Ваш Email">
+            <input type="email" name="email" placeholder="Ваш Email" required>
         </label>
         <br>
         <label>
             Номер телефона
-            <input type="tel" name="phone">
+            <input type="tel" name="phone" required>
         </label>
         <br>
         <label>
@@ -63,6 +60,7 @@
         <br>
         </label>
             <input type="submit">
+        <input type="reset">
 
 
 
